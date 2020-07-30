@@ -1,5 +1,8 @@
 
-createGrid(50);
+let gridSize=16;
+getSize();
+createGrid(gridSize);
+
 
 
 function createGrid(size) {
@@ -47,4 +50,26 @@ function draw(){
         });
     });
 
+}
+
+function getSize(){
+    const sizeSlider = document.querySelector('#size-slider');
+
+    sizeSlider.value = '16';
+
+    sizeSlider.addEventListener('change',() => {
+        let size = sizeSlider.value;
+        console.log(size);
+        removeElements();
+        createGrid(size);
+    });
+}
+
+function removeElements(){
+    // this function is to remove the grid to then recreate the grid:
+
+    const grid = document.querySelectorAll('.square');
+    grid.forEach((box)=>{
+        box.remove();
+    });
 }
