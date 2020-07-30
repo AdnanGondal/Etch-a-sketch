@@ -2,12 +2,17 @@
 
 #container {
     width: auto;
-    height: 1000px;
+    max-width: 200px;
+    height: auto;
     border: 1px solid black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 
+}
+.square{
+    background-color: lightgray;
 }
 
 .row {
@@ -24,4 +29,8 @@
     border: 1px solid red;
     height: 10px;
 
+}
+
+.black-hover{
+    background-color: black;
 }
