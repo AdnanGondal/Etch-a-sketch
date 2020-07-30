@@ -67,6 +67,7 @@ function getSize(){
 
 function removeElements(){
     // this function is to remove the grid to then recreate the grid:
+    // to solve the problem I was having of grids overlaying each other everytime I changed the size. 
 
     const grid = document.querySelectorAll('.square');
     grid.forEach((box)=>{
