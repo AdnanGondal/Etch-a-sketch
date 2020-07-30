@@ -1,0 +1,27 @@
+
+
+#container {
+    width: auto;
+    height: 1000px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.row {
+    flex-basis: auto;
+    width: 10px;
+    height: 160px;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    flex-basis: auto;
+    border: 1px solid red;
+    height: 10px;
+
+}
