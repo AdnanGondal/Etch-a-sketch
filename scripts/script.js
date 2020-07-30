@@ -25,12 +25,21 @@ function createGrid(size) {
 
 function draw(){
     const boxes = document.querySelectorAll('.square');
-    console.log(boxes);
-
+    
     boxes.forEach((box) => {
 
         box.addEventListener('mouseover',()=>{
             box.classList.toggle('black-hover')
+        });
+    });
+
+    const clearBut = document.querySelector('#clear-button');
+
+    clearBut.addEventListener('click',() => {
+        boxes.forEach((box) => {
+
+            box.classList.remove('black-hover');
+       
         });
     });
 
