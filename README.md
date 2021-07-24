@@ -1,5 +1,7 @@
 # Etch-a-Sketh
 
+![image](https://user-images.githubusercontent.com/43793942/126876464-f2e3b3fc-b536-4939-bb0c-192cc26cbbc5.png)
+
 
 ## Description
 
